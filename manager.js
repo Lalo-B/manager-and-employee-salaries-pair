@@ -11,6 +11,11 @@ class Manager extends Employee {
     }
 }
 
-console.log(Manager)
+// console.log(Manager)
+try {
+    module.exports = Manager
+} catch {
+    module.exports = null
+}
 
-module.exports = Manager
+// module.exports = Manager
