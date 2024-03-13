@@ -1,7 +1,7 @@
 
 
 class Employee {
-    constructor(name, salary, title, manager = null){
+    constructor(name, salary, title, manager = null) {
         this.name = name
         this.salary = salary
         this.title = title
@@ -9,20 +9,13 @@ class Employee {
         manager !== null ? manager.addEmployee(this) : false
     }
 
-    // static hasManager(employee){
-    //     console.log(this.manager);
-
-    //     if(this.manager){
-    //         const Manager = require(`./manager`)
-
-    //     };
-    // }
+    calculateBonus(multiplier) {
+        let bonus = this.salary * multiplier
+        return bonus
+    }
 }
 
- //const Manager = require(`./manager`)
-//const splinter = new Manager('Splinter', 100000, 'Sensei');
-//const donnie = new Employee('Donatello', 90000, 'Ninja', splinter);
-//console.log(Employee.hasManager(donnie))
+
 
 
 try {
