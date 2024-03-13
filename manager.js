@@ -25,7 +25,6 @@ class Manager extends Employee {
     }
 
     calculateBonus(multiplier) {
-        debugger
         let bonus = this.salary
         bonus += this._totalSubSalary(bonus)
         return bonus *= multiplier
@@ -38,4 +37,3 @@ try {
     module.exports = null
 }
 
-// module.exports = Manager
